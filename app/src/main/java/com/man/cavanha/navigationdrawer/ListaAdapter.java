@@ -9,9 +9,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
+import com.man.cavanha.navigationdrawer.model.Aluno;
 
-import professorangoti.com.gabaritoprovalistadealunos.model.Aluno;
+import java.util.List;
 
 class ListaAdapter extends BaseAdapter {
 

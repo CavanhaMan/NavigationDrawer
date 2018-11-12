@@ -1,9 +1,10 @@
 package com.man.cavanha.navigationdrawer.services;
 
 
+import com.man.cavanha.navigationdrawer.model.Aluno;
+
 import java.util.List;
 
-import professorangoti.com.gabaritoprovalistadealunos.model.Aluno;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;

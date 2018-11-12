@@ -1,13 +1,3 @@
-/*
-Esta Activity demonstra a utilização de um ListView extendendo a classe Activity.
-Desta forma o id da ListView pode ser qualquer id que você quiser nomear.
-No arquivo padrao.xml temos a definição do id assim:
-
-<ListView
-        android:id="@+id/listview_listadealunos"
-
- */
-
 package com.man.cavanha.navigationdrawer;
 
 import android.app.Activity;
@@ -18,9 +8,9 @@ import android.widget.ListView;
 
 import java.util.List;
 
-import professorangoti.com.gabaritoprovalistadealunos.model.Aluno;
-import professorangoti.com.gabaritoprovalistadealunos.services.InterfaceDeServicos;
-import professorangoti.com.gabaritoprovalistadealunos.services.RetrofitService;
+import com.man.cavanha.navigationdrawer.model.Aluno;
+import com.man.cavanha.navigationdrawer.services.InterfaceDeServicos;
+import com.man.cavanha.navigationdrawer.services.RetrofitService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

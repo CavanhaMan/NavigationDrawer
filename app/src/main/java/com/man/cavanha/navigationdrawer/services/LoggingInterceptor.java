@@ -1,7 +1,5 @@
 package com.man.cavanha.navigationdrawer.services;
 
-import android.util.Log;
-
 import java.io.IOException;
 
 import okhttp3.Interceptor;
