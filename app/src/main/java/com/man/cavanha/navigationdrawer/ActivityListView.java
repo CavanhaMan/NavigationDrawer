@@ -1,16 +1,15 @@
 package com.man.cavanha.navigationdrawer;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ListView;
-
-import java.util.List;
 
 import com.man.cavanha.navigationdrawer.model.Aluno;
 import com.man.cavanha.navigationdrawer.services.InterfaceDeServicos;
 import com.man.cavanha.navigationdrawer.services.RetrofitService;
+
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

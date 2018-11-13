@@ -26,15 +26,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout dl;
     private ActionBarDrawerToggle t;
     private NavigationView nv;
-
     ListView lista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         lista = (ListView) findViewById(R.id.listview_listadealunos);
+        //separar o mainsactivity e o activity padrao!!
         imprimeLista();
 
         dl = (DrawerLayout) findViewById(R.id.activity_main);
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return false;
     }
 
-
     private void imprimeLista() {
 
         InterfaceDeServicos services = RetrofitService.getServico();
@@ -96,5 +94,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
     }
-
 }
