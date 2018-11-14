@@ -6,35 +6,19 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
-import android.widget.ListView;
 import android.widget.Toast;
-
-import com.man.cavanha.navigationdrawer.model.Aluno;
-import com.man.cavanha.navigationdrawer.services.InterfaceDeServicos;
-import com.man.cavanha.navigationdrawer.services.RetrofitService;
-
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout dl;
     private ActionBarDrawerToggle t;
     private NavigationView nv;
-    ListView lista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lista = (ListView) findViewById(R.id.listview_listadealunos);
-        //separar o mainsactivity e o activity padrao!!
-        imprimeLista();
 
         dl = (DrawerLayout) findViewById(R.id.activity_main);
         t = new ActionBarDrawerToggle(this, dl, R.string.abrir, R.string.fechar);
@@ -74,24 +58,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
         }
         return false;
-    }
-
-    private void imprimeLista() {
-
-        InterfaceDeServicos services = RetrofitService.getServico();
-        Call<List<Aluno>> call = services.webserviceNotasDeAlunos();
-
-        call.enqueue(new Callback<List<Aluno>>() {
-            @Override
-            public void onResponse(Call<List<Aluno>> call, Response<List<Aluno>> response) {
-                List<Aluno> listaAlunosNotas = response.body();
-                lista.setAdapter(new ListaAdapter(MainActivity.this, listaAlunosNotas));
-            }
-
-            @Override
-            public void onFailure(Call<List<Aluno>> call, Throwable t) {
-                Log.i("debug", t.getMessage());
-            }
-        });
     }
 }
