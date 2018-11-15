@@ -29,6 +29,7 @@
 
     </android.support.constraint.ConstraintLayout>
 
+    <!-- Abaixo segue o codigo da gaveta -->
     <android.support.design.widget.NavigationView
         android:id="@+id/nv"
         android:layout_width="wrap_content"

@@ -7,11 +7,11 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="59dp"
+        android:layout_width="63dp"
+        android:layout_height="97dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@android:drawable/sym_def_app_icon" />
+        android:background="@drawable/barbab" />
 
     <TextView
         android:layout_width="match_parent"
@@ -19,8 +19,7 @@
         android:layout_margin="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Cavanha Studio"
-        android:textAppearance=
-            "@style/TextAppearance.AppCompat.Body1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold" />
