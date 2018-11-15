@@ -1,5 +1,6 @@
 package com.man.cavanha.navigationdrawer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.carrinho:
                 Toast.makeText(MainActivity.this, "Meu carrinho de compras", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.listanomes:
+                Toast.makeText(MainActivity.this, "Listagem de pessoas", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,ActivityPadrao.class));
                 break;
             default:
                 return true;

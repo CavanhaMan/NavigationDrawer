@@ -19,6 +19,7 @@
         android:layout_margin="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Cavanha Studio"
+        android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
