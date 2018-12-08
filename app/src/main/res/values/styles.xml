@@ -6,7 +6,7 @@
         <item name="colorPrimary">#000066</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
         <item name="colorAccent">@color/design_default_color_primary_dark</item>
-        <item name="navigationBarColor">#000066</item>
+        <!--item name="navigationBarColor">#000066</item-->
     </style>
 
 </resources>
